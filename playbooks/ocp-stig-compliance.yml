@@ -1,0 +1,6 @@
+#ocp-stig-compliance
+---
+- name: Validate stig profiles
+  hosts: bastion
+  roles:
+  - ocp-stig-compliance
