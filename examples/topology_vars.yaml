@@ -1,0 +1,12 @@
+---
+# topology vars
+
+topology_enabled: false
+besteffort_cpuv1: "25"
+besteffort_cpuv2: "15"
+restricted_cpuv1: "8"
+restricted_cpuv2: "40"
+none_cpuv1: "20"
+none_cpuv2: "33"
+
+

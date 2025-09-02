@@ -1,0 +1,15 @@
+---
+# tasks file for playbooks/roles/topology-manager
+
+- name: Check if cluster operators and nodes are healthy
+  include_role:
+    name: check-cluster-health
+
+- name:  Validate Pod Alignment with CPU requests and Topology Manager policy set to Best Effort
+  include_tasks: besteffort_policy.yml
+
+- name: Validate Pod Alignment with CPU requests and Topology Manager policy set to Restricted
+  include_tasks: restricted_policy.yml
+
+- name: Validate Pod Alignment with CPU requests and Topology Manager policy set to None
+  include_tasks: none_policy.yml
